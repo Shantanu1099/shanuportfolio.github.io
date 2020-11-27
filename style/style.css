@@ -80,7 +80,7 @@ textarea {
   overflow: auto;
 }
 .main-container {
-  width: 1600px;
+  width: 1200px;
   margin: 0 auto;
 }
 .greeting-wrapper {
@@ -356,7 +356,7 @@ textarea {
 .post-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, 320px);
-  gap: 110px;
+  gap: 50px;
   /* align-items: center; */
   justify-content: center;
   padding-bottom: 50px;
