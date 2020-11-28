@@ -1,14 +1,14 @@
 :root {
-    --mainColor: #552542;
-    --secondaryColor: #b877b8;
+    --mainColor: #4d233c;
+    --secondaryColor: #855a85;
   
     --borderColor: #c1c1c1;
   
-    --mainText: black;
-    --secondaryText: #4b5156;
-    --themeDotBorder: #edbbf7;
-    --previewBg: #dff9fb;
-    --previewShadow: #c7ecee;
+    --mainText: rgb(255, 255, 255);
+    --secondaryText: #eaeff3;
+    --themeDotBorder: #fcfcfc;
+    --previewBg: #a655a8;
+    --previewShadow: #4d233c;
     --btnColor: black;
   }
   html,
@@ -67,6 +67,14 @@ textarea {
   color: var(--secondaryText);
   font-family: "Montserrat", sans-serif;
 }
+.secondary-text-sections{
+  color: var(--secondaryText);
+  font-family: "Montserrat", sans-serif;
+}
+#secondary-text-sections{
+  color: var(--secondaryText);
+  font-family: "Montserrat", sans-serif;
+}
 .s1 {
   background-color: var(--mainColor);
   border-bottom: 1px solid var(--borderColor);
@@ -79,7 +87,7 @@ textarea {
   overflow: auto;
 }
 .main-container {
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
 }
 .greeting-wrapper {
@@ -129,16 +137,26 @@ textarea {
   align-items: center;
   background-color: var(--mainColor);
 }
-#navigation a {
+.link-tags {
   font-size: 25px;
-  color: #00a8ff;
+  color: #ffffff;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 6px 6px 6px 6px;
+  margin: 5px;
+  /* background-color: white; */
   /* color: var(--mainText); */
   /* text-decoration: underline; */
 }
-#navigation a:hover {
-  text-shadow: 0 0 7px cyan;
+.link-tags:hover {
+  text-shadow: 0 0 10px cyan;
+  font-weight: bold;
   color: whitesmoke;
-  transition: 0.09s all ease-in-out;
+  /* transform: scale(3); */
+  transition: 0.1s all 
+  ease-in-out;
+  background-color: black;
+  /* opacity: 0.7; */
 }
 
 #navigation {
@@ -241,8 +259,8 @@ textarea {
   background-color: var(--previewShadow);
   width: 300px;
   height: 205px;
-  padding-left: 30px;
-  padding-top: 30px;
+  padding-left: 25px;
+  padding-top: 25px;
 }
 #preview {
   width: 300px;
@@ -276,7 +294,7 @@ textarea {
   left: -5px;
 }
 #profile-about{
-  color: black;
+  color: var(--mainText);
   font-size: 18px;
   font-weight: bold;
 }
@@ -299,13 +317,42 @@ textarea {
 .social-links {
   /* display: grid; */
 
-  gap: 100px;
+  /* gap: 100px; */
+  margin: 10px;
   align-content: center;
   text-align: center;
 }
 #social-img {
   display: flex;
   width: 100%;
+  height: 50%;
+}
+.social-media{
+  max-width: 25px;
+  max-height: 25px;
+  color: var(--mainText);
+  /* gap: 30px; */
+  border: 2px solid var(--themeDotBorder);
+  border-radius: 10px;
+  background-color: rgb(232, 240, 240);
+  /* background-color: none; */
+  padding: 5px;
+  margin: 8px;
+}
+.social-media:hover{
+  max-width: 25px;
+  max-height: 25px;
+  color: var(--mainText);
+  /* gap: 30px; */
+  border: 2px solid rgb(247, 247, 247);
+  border-radius: 5px;
+  transform: scale(1.1);
+  transition: all ease-in-out 0.05s;
+  background-color: rgb(247, 247, 247);
+  box-shadow: 0 0 2px white;
+  /* background-color: none; */
+  padding: 5px;
+  margin: 8px;
 }
 .post {
   border-radius: 10px;
@@ -315,7 +362,7 @@ textarea {
   box-shadow: 3px -2px 9px -2px rgba(0, 0, 0, 0.51);
 }
 .post:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all 0.1s ease-in-out;
   border-radius: 10px;
   border: 1px solid var(--borderColor);
@@ -328,7 +375,7 @@ textarea {
 .thumbnail {
   border-radius: 10px 10px 0px 0px ;
   width: 100%;
-  height: 180px;
+  height: 140px;
   display: block;
   object-fit: cover;
 }
@@ -343,19 +390,19 @@ textarea {
 }
 .post-intro {
   color: #2f3640;
-  font-size: 20px;
+  font-size: 18px;
 }
 .post-link{
-  font-size: 20px;
+  font-size: 18px;
 }
 .post-link:hover{
-  font-size: 20px;
+  font-size: 18px;
   text-shadow: 0 0 10px cyan;
 }
 .post-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, 320px);
-  gap: 50px;
+  gap: 20px;
   /* align-items: center; */
   justify-content: center;
   padding-bottom: 50px;
@@ -368,6 +415,9 @@ textarea {
 .post1-img{
 
   background-size: cover;
+}
+#profile-about{
+  color: var(--secondaryText);
 }
 #contact-form {
   display: block;
