@@ -476,15 +476,9 @@
       background-color: var(--previewShadow);
       width: 260px;
       height: 300px;
-      padding-left: 25px;
-      padding-top: 25px;
     }
     #preview {
       width: 205px;
-    }
-    .s2{
-      width: 100vw;
-      height: 100vh;
     }
     .link-tags2{
       border: none;

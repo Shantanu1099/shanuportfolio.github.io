@@ -478,10 +478,16 @@ textarea {
     background-color: var(--previewShadow);
     width: 260px;
     height: 300px;
-    padding-left: 25px;
-    padding-top: 25px;
   }
   #preview {
     width: 205px;
+  }
+  .link-tags2{
+    border: none;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  #skills{
+    font-size: 13px;
   }
 }
