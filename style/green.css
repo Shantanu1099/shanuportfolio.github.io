@@ -484,6 +484,7 @@ textarea {
     border: none;
     font-size: 20px;
     text-decoration: underline;
+    text-decoration-color: var(--mainText);
   }
   #skills{
     font-size: 13px;
